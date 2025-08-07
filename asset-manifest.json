@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/Rumination/static/js/main.1feac0ef.js",
+    "main.js": "/Rumination/static/js/main.c28ccd31.js",
     "index.html": "/Rumination/index.html",
-    "main.1feac0ef.js.map": "/Rumination/static/js/main.1feac0ef.js.map"
+    "main.c28ccd31.js.map": "/Rumination/static/js/main.c28ccd31.js.map"
   },
   "entrypoints": [
-    "static/js/main.1feac0ef.js"
+    "static/js/main.c28ccd31.js"
   ]
 }
