@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {
   Container, Typography, Radio, RadioGroup, FormControlLabel,
-  FormControl, FormLabel, Button, Paper, Grid
+  FormControl, FormLabel, Button, Paper
 } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
