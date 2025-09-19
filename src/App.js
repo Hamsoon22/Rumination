@@ -1,16 +1,14 @@
-// App.jsx
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import RuminationSurvey from './RuminationSurvey';
 import ResultPage from './ResultPage';
 
 export default function App() {
   return (
-    <BrowserRouter basename="/">
+    <Router>
       <Routes>
-        <Route path="/" element={<RuminationSurvey />} />
+        <Route index element={<RuminationSurvey />} />
         <Route path="/result" element={<ResultPage />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }

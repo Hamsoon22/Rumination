@@ -2,7 +2,6 @@
   "name": "rumination-survey",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hamsoon22.github.io/Rumination",
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
@@ -14,23 +13,18 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "predeploy": "npm run build",
+    "build": "cross-env PUBLIC_URL=/ react-scripts build",
+    "build:railway": "cross-env PUBLIC_URL=/ react-scripts build",
+    "build:gh": "cross-env PUBLIC_URL=https://hamsoon22.github.io/Rumination react-scripts build",
+    "predeploy": "npm run build:gh",
     "deploy": "gh-pages -d build"
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.3.0",
+    "cross-env": "^7.0.3"
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
   }
 }
